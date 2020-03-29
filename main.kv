@@ -1,0 +1,62 @@
+<GridLayout>:
+    rows: 3
+    cols: 1
+
+    FloatLayout:
+        canvas.before:
+            Color: 
+                rgba : 0, 1, 0, 1
+        
+        Button:
+            text: "Login"
+            font_size: "20sp"
+            background_color: (1, 0.5, 0.6, 1)
+            color: (1, 1, 1, 1)
+            size: self.size
+            size_hint: (0.2, 0.2)
+            pos_hint: {"top": 1 , "left" : 1}
+        
+        Button:
+            text: "Sign Up"
+            font_size: "20sp"
+            background_color: (1, 0.8, 1, 1)
+            color: (1, 1, 1, 1)
+            size: self.size
+            size_hint: (0.2, 0.2)
+            pos_hint: {"top" : 1, "right" : 1}
+
+        Label: 
+            text : "Email"
+            pos: (-200, 140)
+            
+        TextInput:
+            text: "Email"
+            on_touch_down: self.text = ''
+            multiline: False
+            font_size: "20sp"
+            background_color: (1, 1, 1, 0.5)
+            color: (1, 1, 1, 1)
+            size: root.size 
+            size_hint: (0.40, 0.06)
+            pos_hint: {"x" : 0.3, "y" : 0.7}
+        
+            
+        Label: 
+            text : "Password"
+            pos: (-215, 80)
+    
+        TextInput:
+            text: "Password"
+            on_touch_down: self.text = ''
+            multiline: False
+            font_size: "20sp"
+            background_color: (1, 1, 1, 0.5)
+            color: (1, 1, 1, 1)
+            size: root.size 
+            size_hint: (0.40, 0.06)
+            pos_hint: {"x" : 0.3, "y" : 0.6}
+        
+
+        
+
+        
