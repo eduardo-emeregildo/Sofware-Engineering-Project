@@ -12,8 +12,7 @@
             font_size: "20sp"
             background_color: (1, 0.5, 0.6, 1)
             color: (1, 1, 1, 1)
-            size: self.size
-            size_hint: (0.2, 0.2)
+            size_hint: (0.20, 0.1)
             pos_hint: {"top": 1 , "left" : 1}
         
         Button:
@@ -21,13 +20,12 @@
             font_size: "20sp"
             background_color: (1, 0.8, 1, 1)
             color: (1, 1, 1, 1)
-            size: self.size
-            size_hint: (0.2, 0.2)
+            size_hint: (0.20, 0.1)
             pos_hint: {"top" : 1, "right" : 1}
 
         Label: 
-            text : "Email"
-            pos: (-200, 140)
+            text : "Email: "
+            pos: (-200, 200)
             
         TextInput:
             text: "Email"
@@ -36,14 +34,12 @@
             font_size: "20sp"
             background_color: (1, 1, 1, 0.5)
             color: (1, 1, 1, 1)
-            size: root.size 
             size_hint: (0.40, 0.06)
-            pos_hint: {"x" : 0.3, "y" : 0.7}
-        
+            pos_hint: {"x" : 0.3, "y" : 0.8}
             
         Label: 
-            text : "Password"
-            pos: (-215, 80)
+            text : "Password: "
+            pos: (-215, 140)
     
         TextInput:
             text: "Password"
@@ -54,7 +50,7 @@
             color: (1, 1, 1, 1)
             size: root.size 
             size_hint: (0.40, 0.06)
-            pos_hint: {"x" : 0.3, "y" : 0.6}
+            pos_hint: {"x" : 0.3, "y" : 0.7}
         
 
         
