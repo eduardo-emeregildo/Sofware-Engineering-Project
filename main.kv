@@ -2,7 +2,7 @@
     rows: 3
     cols: 1
 
-    FloatLayout:
+    RelativeLayout:
         canvas.before:
             Color: 
                 rgba : 0, 1, 0, 1
@@ -12,7 +12,7 @@
             font_size: "20sp"
             background_color: (1, 0.5, 0.6, 1)
             color: (1, 1, 1, 1)
-            size_hint: (0.20, 0.1)
+            size_hint: (0.20, 0.2)
             pos_hint: {"top": 1 , "left" : 1}
         
         Button:
@@ -20,12 +20,12 @@
             font_size: "20sp"
             background_color: (1, 0.8, 1, 1)
             color: (1, 1, 1, 1)
-            size_hint: (0.20, 0.1)
+            size_hint: (0.20, 0.2)
             pos_hint: {"top" : 1, "right" : 1}
 
         Label: 
             text : "Email: "
-            pos: (-200, 200)
+            pos: (-215, -45)
             
         TextInput:
             text: "Email"
@@ -34,12 +34,12 @@
             font_size: "20sp"
             background_color: (1, 1, 1, 0.5)
             color: (1, 1, 1, 1)
-            size_hint: (0.40, 0.06)
-            pos_hint: {"x" : 0.3, "y" : 0.8}
+            size_hint: (0.40, 0.15)
+            pos: (240, 40)
             
         Label: 
             text : "Password: "
-            pos: (-215, 140)
+            pos: (-215, -84)
     
         TextInput:
             text: "Password"
@@ -48,11 +48,16 @@
             font_size: "20sp"
             background_color: (1, 1, 1, 0.5)
             color: (1, 1, 1, 1)
-            size: root.size 
-            size_hint: (0.40, 0.06)
-            pos_hint: {"x" : 0.3, "y" : 0.7}
-        
+            size_hint: (0.40, 0.15)
+            pos:(240,0)
 
-        
+    RelativeLayout:
+        Label:
+            text : "Top Projects "
+            pos: (0, 0)
 
-        
+    StackLayout:
+        Label:
+            text : "Top Users "
+            pos: (0, 0)
+
